@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">Scientific calculator</string>
+    <string name="root">\u221a</string>
+    <string name="sin1">sin \u0305</string>
+    <string name="smille">\u263a</string>
+    <string name="tan">tan</string>
+    <string name="cos">cos</string>
+    <string name="cos1">cos \u0305</string>
+    <string name="tan1">tan \u0305</string>
+    <string name="baclet">(</string>
+    <string name="bracketClose">)</string>
+    <string name="invers">^</string>
+    <string name="log">log</string>
+    <string name="del">del</string>
+    <string name="c">C</string>
+    <string name="add">+</string>
+    <string name="equal">=</string>
+    <string name="dot">.</string>
+    <string name="zero">0</string>
+    <string name="sub">-</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="two">2</string>
+    <string name="multiplex">x</string>
+    <string name="six">6</string>
+    <string name="five">5</string>
+    <string name="nine">9</string>
+    <string name="eight">8</string>
+    <string name="seven">7</string>
+    <string name="divide">/</string>
+    <string name="parsent">%</string>
+    <string name="_10x">10x</string>
 </resources>
