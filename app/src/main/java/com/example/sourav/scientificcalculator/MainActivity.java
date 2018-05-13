@@ -55,10 +55,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bRoot=findViewById(R.id.btnRoot);
         tvInput=findViewById(R.id.tvViewInput);
         tvResultView=findViewById(R.id.tvResult);
+
+        b0.setOnClickListener(this);
+        b1.setOnClickListener(this);
+        b2.setOnClickListener(this);
+        b3.setOnClickListener(this);
+        b4.setOnClickListener(this);
+        b5.setOnClickListener(this);
+        b6.setOnClickListener(this);
+        b7.setOnClickListener(this);
+        b8.setOnClickListener(this);
+        b9.setOnClickListener(this);
+        bDot.setOnClickListener(this);
+        bEqual.setOnClickListener(this);
+        bAdd.setOnClickListener(this);
+        bParsent.setOnClickListener(this);
+        bSub.setOnClickListener(this);
+        bMulti.setOnClickListener(this);
+        bDivide.setOnClickListener(this);
+        bC.setOnClickListener(this);
+        bDel.setOnClickListener(this);
+        bSin.setOnClickListener(this);
+        bSinIn.setOnClickListener(this);
+        bCos.setOnClickListener(this);
+        bCosIn.setOnClickListener(this);
+        bTan.setOnClickListener(this);
+        bTanIn.setOnClickListener(this);
+        bx2.setOnClickListener(this);
+        bPie.setOnClickListener(this);
+        bLog.setOnClickListener(this);
+        bInvers.setOnClickListener(this);
+        bBraOpen.setOnClickListener(this);
+        bBraClose.setOnClickListener(this);
+        bRoot.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-
     }
 }
