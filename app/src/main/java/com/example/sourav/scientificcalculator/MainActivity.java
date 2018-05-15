@@ -1,7 +1,9 @@
 package com.example.sourav.scientificcalculator;
 
+import android.provider.SyncStateContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -58,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
         tvInput = findViewById(R.id.tvViewInput);
         tvResultView = findViewById(R.id.tvResult);
 
+//        bInvers.setText(Html.fromHtml(SyncStateContract.Helpers.insert()));
+//        labelInverseCos.setText(Html.fromHtml(SyncStateContract.Helpers.inverseCos));
+//        labelInverseTan.setText(Html.fromHtml(Helpers.inverseTan));
+//        labelExponential.setText(Html.fromHtml(Helpers.exponential));
+//        labelTenPowerX.setText(Html.fromHtml(Helpers.tenPowerX));
+//        labelCubeRoot.setText(Html.fromHtml(Helpers.cubeSquare));
+//        labelCube.setText(Html.fromHtml(Helpers.cubeRoot));
+//        labelPi.setText(Html.fromHtml(Helpers.pi));
+
         bC.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -83,248 +94,224 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "0");
+                tvInput.setText(tvInput.getText().toString()+"0");
             }
         });
         b1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "1");
+                tvInput.setText(tvInput.getText().toString()+"1");
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "2");
+                tvInput.setText(tvInput.getText().toString()+"2");
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "3");
+                tvInput.setText(tvInput.getText().toString()+"3");
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "4");
+                tvInput.setText(tvInput.getText().toString()+"4");
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "5");
+                tvInput.setText(tvInput.getText().toString()+"5");
             }
         });
         b6.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "6");
+                tvInput.setText(tvInput.getText().toString()+"6");
             }
         });
         b7.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "7");
+                tvInput.setText(tvInput.getText().toString()+"7");
             }
         });
         b8.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "8");
+                tvInput.setText(tvInput.getText().toString()+"8");
             }
         });
         b9.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "9");
+                tvInput.setText(tvInput.getText().toString()+"9");
             }
         });
         bDot.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + ".");
+                tvInput.setText(tvInput.getText().toString()+".");
             }
         });
         bParsent.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "%");
+                tvInput.setText(tvInput.getText().toString()+"%");
             }
         });
         bAdd.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "+");
+                tvInput.setText(tvInput.getText().toString()+"+");
             }
         });
         bTan.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "tan");
+                tvInput.setText(tvInput.getText().toString()+"tan");
             }
         });
         bSub.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "-");
+                tvInput.setText(tvInput.getText().toString()+"-");
             }
         });
         bDivide.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "/");
+                tvInput.setText(tvInput.getText().toString()+"/");
             }
         });
         bMulti.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "X");
+                tvInput.setText(tvInput.getText().toString()+"x");
             }
         });
         bx2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "x2");
+                tvInput.setText(tvInput.getText().toString()+"x2");
             }
         });
         b10x.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "10x");
+                tvInput.setText(tvInput.getText().toString()+"10x");
             }
         });
         bFactorial.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "x!");
+                tvInput.setText(tvInput.getText().toString()+"x!");
             }
         });
         bPie.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "π");
+                tvInput.setText(tvInput.getText().toString()+"π");
             }
         });
         bLog.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "log");
+                tvInput.setText(tvInput.getText().toString()+"log");
             }
         });
         bInvers.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "^");
+                tvInput.setText(tvInput.getText().toString()+"^");
             }
         });
         bRoot.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "\u221a");
+                tvInput.setText(tvInput.getText().toString()+"\u221a");
             }
         });
         bBraOpen.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "(");
+                tvInput.setText(tvInput.getText().toString()+"(");
             }
         });
         bBraClose.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + ")");
+                tvInput.setText(tvInput.getText().toString()+")");
             }
         });
         bTanIn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "tan-");
+                tvInput.setText(tvInput.getText().toString()+"tan-");
             }
         });
         bSin.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "sin");
+                tvInput.setText(tvInput.getText().toString()+"sin");
             }
         });
         bSinIn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "sin-");
+                tvInput.setText(tvInput.getText().toString()+"sin-");
             }
         });
         bCos.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "cos");
+                tvInput.setText(tvInput.getText().toString()+"cos");
             }
         });
         bCosIn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                vat1=tvInput.getText().toString();
-                tvInput.setText(vat1 + "cos-");
+                tvInput.setText(tvInput.getText().toString()+"cos-");
+            }
+        });
+        bEqual.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
